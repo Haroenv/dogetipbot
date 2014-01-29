@@ -1081,6 +1081,10 @@ def eval_comment(comment, ctb):
             to_addr = m.group(r.rg_address) if r.rg_address > 0 else None
             amount = m.group(r.rg_amount) if r.rg_amount > 0 else None
             keyword = m.group(r.rg_keyword) if r.rg_keyword > 0 else None
+            
+            # Check if subreddit is promos
+            if comment.subreddit == 'promos':
+                return None
 
             # If no destination mentioned, find parent submission's author
             if not u_to and not to_addr:
