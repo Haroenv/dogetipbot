@@ -220,3 +220,9 @@ half:
     value: 0.5
     for_fiat: true
     for_coin: true
+
+shibe:
+    value: 100
+    for_fiat: false
+    for_coin: true
+    message: '{USER_FROM} ^gives {USER_TO} ^a ^lovely ^shibe ^^wow! ^**ヽ༼°ᴥ°༽ﾉ ** ^- ^worth {AMOUNT}'
